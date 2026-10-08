@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ELDEN Hospital Expo</title>
+<meta name="description" content="Audit funnel dan tracking WhatsApp gratis untuk 8 klinik pertama. Tutup 15 Oktober 2026, 23.59 WIB.">
+<!--
+  ELDEN Hospital Expo - landing page (HTML statis, tanpa build step)
+
+  Yang biasa diubah:
+  1) Tanggal tutup  : cari DEADLINE di script paling bawah file ini.
+  2) Nomor WhatsApp : cari "wa.me" (ada di beberapa tombol, ganti semuanya).
+  3) Warna          : --brand dan --deep di blok <style> paling atas.
+  4) Logo           : ganti file logo.png (nama file harus sama).
+-->
+<style>:root{--brand:#0155FF;--deep:#00237A}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800;900&amp;family=IBM+Plex+Mono:wght@500;600&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0}
+h1,h2,h3,p{margin:0}
+.d{font-family:Archivo,system-ui,sans-serif}
+.m{font-family:'IBM Plex Mono',ui-monospace,monospace}
+a:focus-visible,summary:focus-visible{outline:3px solid #0A0A0A;outline-offset:3px}
+summary{cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none}
+details[open] .plus{transform:rotate(45deg)}
+.plus{transition:transform .15s ease}
+.cta:hover{filter:brightness(1.06)}
+.flow{display:flex;align-items:center;gap:20px}
+.steps{position:relative}
+.steps::before{content:"";position:absolute;top:44px;left:16%;right:16%;border-top:2px dashed #8FB0F5;z-index:0}
+@media (max-width:760px){
+.flow{flex-direction:column;align-items:stretch}
+.flow .arr{transform:rotate(90deg);align-self:center}
+.steps::before{display:none}
+}
+@media (prefers-reduced-motion: reduce){.plus{transition:none}}
+</style>
+</head>
+<body>
+<div style="width:100%;background:#FFFFFF;color:#0A0A0A;font-family:'Public Sans',system-ui,sans-serif;font-size:17px;line-height:1.75">
+
+<!-- Pita atas -->
+<div class="m" style="position: sticky; top: 0; z-index: 20; background: #0A0A0A; color: #FFFFFF; text-align: center; padding: 10px 16px; font-weight: 600; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; line-height: 1.6">EXPO PRICE: 8 SLOT GRATIS · TUTUP 15 OKT 23.59 WIB · <span data-countdown>Segera ditutup</span></div>
+
+<!-- Header -->
+<div style="background:#FFFFFF;border-bottom:1px solid #DCE8FD">
+<div style="max-width:1120px;margin:0 auto;padding:18px clamp(20px,5vw,48px);box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px">
+<img src="logo.png" alt="Elden" style="height:34px;width:auto;display:block">
+<div style="font-weight:500;font-size:14px;color:#4A5568">Your brand has a story. We make it sell.</div>
+</div>
+</div>
+
+<!-- 1. Hero -->
+<div style="position:relative;overflow:hidden;background:var(--brand);color:#FFFFFF">
+<svg viewBox="0 0 600 520" width="560" height="486" fill="none" stroke="#1F6BFF" stroke-width="52" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;right:-120px;bottom:-110px;z-index:0" aria-hidden="true"><path d="M60 460 C 40 330 120 250 140 340 C 160 430 250 470 300 380 C 350 290 330 190 420 170 C 510 150 560 240 500 330 C 450 400 380 430 420 490"></path></svg>
+<svg viewBox="0 0 400 300" width="380" height="285" fill="none" stroke="#1F6BFF" stroke-width="46" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:-150px;top:-90px;z-index:0" aria-hidden="true"><path d="M20 250 C 60 120 140 40 190 110 C 240 180 160 230 120 180 C 90 140 140 90 220 100 C 300 110 330 40 380 30"></path></svg>
+<div style="position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:clamp(56px,8vw,112px) clamp(20px,5vw,48px) clamp(72px,10vw,128px);box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;gap:72px 56px">
+
+<div style="flex:1 1 440px;min-width:0;display:flex;flex-direction:column;gap:36px">
+<div class="m" style="align-self:flex-start;border:1.5px solid #FFFFFF;color:#FFFFFF;padding:7px 14px;font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;line-height:1.5">Untuk pemilik klinik yang sudah beriklan di Meta</div>
+<h1 class="d" style="font-weight:400;font-size:clamp(34px,5vw,58px);line-height:1.12;letter-spacing:-.03em;text-wrap:balance;max-width:15em"><span style="display: block">Berhenti membiayai iklan yang boncos.</span><span style="display: block; margin-top: 24px"><b>Tracking Senilai Rp25jt Gratis, Cuma 8 Slot.</b></span></h1>
+<div style="display:flex;flex-direction:column;gap:20px;max-width:56ch">
+<p style="font-weight:700;font-size:19px;line-height:1.7">Anda bakar puluhan juta tiap bulan. Satu iklan bawa pasien booking, satu lagi cuma bikin admin sibuk balas chat iseng. <br>Tanpa tracking, Anda bayar keduanya terus.</p>
+<p style="color:#E3EDFF">Kami pasang Meta Chat Agent, sistem yang melacak tiap chat WhatsApp sampai ke iklan pemicunya. Anda tahu persis iklan mana yang digandakan, mana yang dimatikan hari ini.</p>
+</div>
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:16px">
+<a class="cta" href="https://wa.me/6285156390686?text=Halo%20ELDEN%2C%20saya%20pemilik%20klinik%20%5Bnama%20klinik%5D.%20Saya%20mau%20klaim%201%20dari%208%20slot%20gratis%20%28audit%20%2B%20tracking%29." style="display:inline-flex;align-items:center;min-height:58px;padding:0 36px;background:#FFFFFF;color:var(--brand);font-weight:800;font-size:17px;text-decoration:none;border-radius:999px">Klaim Slot Gratis Saya →</a>
+<p style="font-size:14px;line-height:1.7;color:#E3EDFF;max-width:50ch">Gratis. Tanpa kontrak. Tanpa kartu kredit. Nilai Rp25jt = Rp10jt audit funnel + Rp15jt setup tracking.</p>
+</div>
+</div>
+
+<!-- Visual: chat dengan sumber iklan -->
+<div style="flex:1 1 380px;min-width:0;display:flex;flex-direction:column;align-items:center;gap:20px">
+<div style="position:relative;width:100%;max-width:400px;padding-bottom:64px;box-sizing:border-box">
+<div style="width:310px;max-width:calc(100% - 24px);margin:0 auto 0 0;background:#0A0A0A;border-radius:40px;padding:10px;box-sizing:border-box;box-shadow:0 32px 64px rgba(0,25,90,.45)">
+<div style="background:#FFFFFF;border-radius:32px;overflow:hidden;color:#0A0A0A">
+<div style="background:#F3F7FF;padding:26px 20px 16px;display:flex;flex-direction:column;gap:4px">
+<div class="d" style="font-weight:800;font-size:18px;line-height:1.3">Chat masuk hari ini</div>
+<div class="m" style="font-weight:500;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#4A5568">Sumber iklan terlacak</div>
+</div>
+
+<div style="display:flex;gap:12px;align-items:center;padding:16px 18px;border-top:1px solid #E6EDF9">
+<div style="flex:0 0 42px;width:42px;height:42px;border-radius:50%;background:#DCE8FD;color:#0155FF;display:flex;align-items:center;justify-content:center;font-weight:800">R</div>
+<div style="flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:6px">
+<div style="font-weight:700;font-size:14px;line-height:1.3">Rina</div>
+<div style="font-size:13px;line-height:1.45;color:#4A5568">Promo konsultasi masih ada?</div>
+<div style="display:flex;flex-wrap:wrap;gap:6px"><span style="background:#0155FF;color:#FFFFFF;font-weight:700;font-size:11px;line-height:1;padding:6px 9px;border-radius:999px">Iklan A</span><span style="background:#D9F5EA;color:#0B6B4D;font-weight:700;font-size:11px;line-height:1;padding:6px 9px;border-radius:999px">Booking</span></div>
+</div>
+</div>
+
+<div style="display:flex;gap:12px;align-items:center;padding:16px 18px;border-top:1px solid #E6EDF9">
+<div style="flex:0 0 42px;width:42px;height:42px;border-radius:50%;background:#E8EAEE;color:#4A5568;display:flex;align-items:center;justify-content:center;font-weight:800">B</div>
+<div style="flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:6px">
+<div style="font-weight:700;font-size:14px;line-height:1.3">Budi</div>
+<div style="font-size:13px;line-height:1.45;color:#4A5568">Info harga ya</div>
+<div style="display:flex;flex-wrap:wrap;gap:6px"><span style="background:#E8EAEE;color:#2D3748;font-weight:700;font-size:11px;line-height:1;padding:6px 9px;border-radius:999px">Iklan B</span><span style="background:#FDE4DE;color:#A32812;font-weight:700;font-size:11px;line-height:1;padding:6px 9px;border-radius:999px">Cuma tanya</span></div>
+</div>
+</div>
+
+<div style="display:flex;gap:12px;align-items:center;padding:16px 18px 22px;border-top:1px solid #E6EDF9">
+<div style="flex:0 0 42px;width:42px;height:42px;border-radius:50%;background:#DCE8FD;color:#0155FF;display:flex;align-items:center;justify-content:center;font-weight:800">S</div>
+<div style="flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:6px">
+<div style="font-weight:700;font-size:14px;line-height:1.3">Sari</div>
+<div style="font-size:13px;line-height:1.45;color:#4A5568">Bisa Sabtu pagi?</div>
+<div style="display:flex;flex-wrap:wrap;gap:6px"><span style="background:#0155FF;color:#FFFFFF;font-weight:700;font-size:11px;line-height:1;padding:6px 9px;border-radius:999px">Iklan A</span><span style="background:#D9F5EA;color:#0B6B4D;font-weight:700;font-size:11px;line-height:1;padding:6px 9px;border-radius:999px">Booking</span></div>
+</div>
+</div>
+</div>
+</div>
+
+<div style="position:absolute;right:0;bottom:0;width:236px;max-width:70%;background:#FFFFFF;color:#0A0A0A;border-radius:20px;padding:18px 20px;box-sizing:border-box;box-shadow:0 20px 44px rgba(0,25,90,.4);display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px"><div style="font-weight:700;font-size:14px">Iklan A</div><div class="m" style="font-weight:600;font-size:11px;letter-spacing:.06em;color:#0B6B4D">Scale</div></div>
+<div style="font-size:13px;color:#4A5568;line-height:1.4;font-variant-numeric:tabular-nums">214 chat → 38 booking</div>
+<div style="height:1px;background:#E6EDF9"></div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px"><div style="font-weight:700;font-size:14px">Iklan B</div><div class="m" style="font-weight:600;font-size:11px;letter-spacing:.06em;color:#A32812">MATIKAN</div></div>
+<div style="font-size:13px;color:#4A5568;line-height:1.4;font-variant-numeric:tabular-nums">190 chat → 2 booking</div>
+</div>
+</div>
+<p class="m" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#C9D8F5;text-align:center;line-height:1.6">Contoh ilustrasi · bukan data klien</p>
+</div>
+
+</div>
+</div>
+
+<!-- 2. Masalah: uang masuk, pasien? -->
+<div style="background:#FFFFFF">
+<div style="max-width:1120px;margin:0 auto;padding:clamp(72px,10vw,136px) clamp(20px,5vw,48px);box-sizing:border-box;display:flex;flex-direction:column;gap:64px">
+<div style="display:flex;flex-direction:column;gap:20px;max-width:760px">
+<div class="m" style="font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Masalahnya</div>
+<h2 class="d" style="font-weight:800;font-size:clamp(28px,4vw,46px);line-height:1.15;letter-spacing:-.02em;text-wrap:balance">Tiap bulan Anda transfer jutaan ke Meta<br><br>Berapa yang jadi pasien?</h2>
+<p style="font-size:18px;color:#4A5568;max-width:56ch">Contoh: budget iklan Rp30 juta sebulan berarti Rp360 juta setahun. Kalau jawaban Anda "nggak tahu persis", budget anda belum di tracking.</p>
+</div>
+
+<div class="flow">
+<div style="flex:1 1 0;min-width:0;background:var(--brand);color:#FFFFFF;border-radius:24px;padding:32px 28px;box-sizing:border-box;display:flex;flex-direction:column;gap:6px">
+<div class="m" style="font-weight:600;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#C9D8F5">Budget iklan</div>
+<div class="d" style="font-weight:900;font-size:34px;line-height:1.1;letter-spacing:-.02em">Rp30 juta</div>
+<div style="font-size:14px;color:#E3EDFF;line-height:1.5">per bulan (contoh)</div>
+</div>
+<svg class="arr" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0155FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 32px" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+<div style="flex:1 1 0;min-width:0;background:#EAF1FF;border-radius:24px;padding:32px 28px;box-sizing:border-box;display:flex;flex-direction:column;gap:6px">
+<div class="m" style="font-weight:600;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#4A5568">Langkah 1</div>
+<div class="d" style="font-weight:800;font-size:24px;line-height:1.2">Iklan jalan</div>
+<div style="font-size:14px;color:#4A5568;line-height:1.5">Klik dan impresi naik</div>
+</div>
+<svg class="arr" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0155FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 32px" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+<div style="flex:1 1 0;min-width:0;background:#EAF1FF;border-radius:24px;padding:32px 28px;box-sizing:border-box;display:flex;flex-direction:column;gap:6px">
+<div class="m" style="font-weight:600;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#4A5568">Langkah 2</div>
+<div class="d" style="font-weight:800;font-size:24px;line-height:1.2">WhatsApp ramai</div>
+<div style="font-size:14px;color:#4A5568;line-height:1.5">Admin balas ratusan chat</div>
+</div>
+<svg class="arr" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0155FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 32px" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+<div style="flex:1 1 0;min-width:0;border:2.5px dashed #0155FF;border-radius:24px;padding:32px 28px;box-sizing:border-box;display:flex;flex-direction:column;gap:6px">
+<div class="m" style="font-weight:600;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#4A5568">Hasilnya</div>
+<div class="d" style="font-weight:900;font-size:34px;line-height:1.1;color:var(--brand)">Pasien? ?</div>
+<div style="font-size:14px;color:#4A5568;line-height:1.5">Yang datang, dari mana?</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 3. Gejala -->
+<div style="background:#F3F7FF">
+<div style="max-width:1120px;margin:0 auto;padding:clamp(72px,10vw,136px) clamp(20px,5vw,48px);box-sizing:border-box;display:flex;flex-direction:column;gap:56px">
+<div style="display:flex;flex-direction:column;gap:20px;max-width:760px">
+<div class="m" style="font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Yang terjadi tanpa tracking</div>
+<h2 class="d" style="font-weight:800;font-size:clamp(28px,4vw,46px);line-height:1.15;letter-spacing:-.02em;text-wrap:balance">Empat kebocoran yang paling sering terjadi</h2>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:28px">
+
+<div style="flex:1 1 440px;min-width:0;background:#FFFFFF;border-radius:24px;padding:40px 36px;box-sizing:border-box;display:flex;flex-direction:column;gap:20px">
+<div style="width:64px;height:64px;border-radius:50%;background:#EAF1FF;color:var(--brand);display:flex;align-items:center;justify-content:center"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V11M10 20V4M16 20v-6M22 20H2"></path></svg></div>
+<p><strong class="d" style="font-size: 21px; font-weight: 800; line-height: 1.3; display: block; margin-bottom: 8px">Dua iklan sama-sama "ramai".</strong><span style="color: rgb(74, 85, 104)">Satu menghasilkan pasien, satu cuma chat iseng. Tanpa tracking, keduanya tetap <b>jadi Cost anda.</b></span></p>
+</div>
+
+<div style="flex:1 1 440px;min-width:0;background:#FFFFFF;border-radius:24px;padding:40px 36px;box-sizing:border-box;display:flex;flex-direction:column;gap:20px">
+<div style="width:64px;height:64px;border-radius:50%;background:#EAF1FF;color:var(--brand);display:flex;align-items:center;justify-content:center"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path><path d="M8 9h8M8 12.5h5"></path></svg></div>
+<p><strong class="d" style="font-size:21px;font-weight:800;line-height:1.3;display:block;margin-bottom:8px">Admin balas ratusan chat.</strong><span style="color:#4A5568">Tidak ada yang tahu berapa yang akhirnya booking dan datang.</span></p>
+</div>
+
+<div style="flex:1 1 440px;min-width:0;background:#FFFFFF;border-radius:24px;padding:40px 36px;box-sizing:border-box;display:flex;flex-direction:column;gap:20px">
+<div style="width:64px;height:64px;border-radius:50%;background:#EAF1FF;color:var(--brand);display:flex;align-items:center;justify-content:center"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"></path><path d="M14 3v5h5M9 13h7M9 17h5"></path></svg></div>
+<p><strong class="d" style="font-size: 21px; font-weight: 800; line-height: 1.3; display: block; margin-bottom: 8px">Laporan agensi berhenti di klik dan impresi.</strong><span style="color: rgb(74, 85, 104)">Anda butuh jadwal pasien terisi, bukan cuman angka cantik.</span></p>
+</div>
+
+<div style="flex:1 1 440px;min-width:0;background:#FFFFFF;border-radius:24px;padding:40px 36px;box-sizing:border-box;display:flex;flex-direction:column;gap:20px">
+<div style="width:64px;height:64px;border-radius:50%;background:#EAF1FF;color:var(--brand);display:flex;align-items:center;justify-content:center"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.4-1 .9-1 1.7M12 17h.01"></path></svg></div>
+<p><strong class="d" style="font-size: 21px; font-weight: 800; line-height: 1.3; display: block; margin-bottom: 8px">Naikkan atau matikan iklan diputuskan pakai perasaan.</strong><span style="color: rgb(74, 85, 104)">Setiap keputusan budget jadi tebakan.</span></p>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- 4. Pernyataan -->
+<div style="position:relative;overflow:hidden;background:var(--deep);color:#FFFFFF">
+<svg viewBox="0 0 400 300" width="460" height="345" fill="none" stroke="#0A3394" stroke-width="46" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;right:-120px;bottom:-130px;z-index:0" aria-hidden="true"><path d="M20 250 C 60 120 140 40 190 110 C 240 180 160 230 120 180 C 90 140 140 90 220 100 C 300 110 330 40 380 30"></path></svg>
+<div style="position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:clamp(80px,11vw,152px) clamp(20px,5vw,48px);box-sizing:border-box">
+<h2 class="d" style="font-weight:900;font-size:clamp(32px,5.4vw,64px);line-height:1.1;letter-spacing:-.03em;text-wrap:balance;max-width:15em">Tanpa tracking, anda bermain <u>tebak - tebakan</u> dengan budget iklan Anda&nbsp;<br></h2>
+</div>
+</div>
+
+<!-- 5. Penawaran -->
+<div style="background:#FFFFFF">
+<div style="max-width:1120px;margin:0 auto;padding:clamp(72px,10vw,136px) clamp(20px,5vw,48px);box-sizing:border-box;display:flex;flex-direction:column;gap:64px">
+<div style="display:flex;flex-direction:column;gap:20px;max-width:800px">
+<div class="m" style="font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Penawaran</div>
+<h2 class="d" style="font-weight:800;font-size:clamp(28px,4vw,46px);line-height:1.15;letter-spacing:-.02em;text-wrap:balance">Solusi nya satu: <br>lacak setiap chat sampai <br>ke iklan asalnya. <br>Kami yang kerjakan, Anda tidak perlu bayar.</h2>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:28px">
+
+<div style="flex:1 1 300px;min-width:0;border:2px solid #DCE8FD;border-radius:28px;padding:40px 34px;box-sizing:border-box;display:flex;flex-direction:column;gap:24px">
+<div style="width:80px;height:80px;border-radius:24px;background:#EAF1FF;color:var(--brand);display:flex;align-items:center;justify-content:center"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h18l-7 8v6l-4 2v-8z"></path></svg></div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div class="m" style="font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#4A5568">Nilai Rp10 juta</div>
+<h3 class="d" style="font-weight:800;font-size:24px;line-height:1.25">Free Funnel Audit</h3>
+<p style="color:#4A5568">Kami bedah perjalanan calon pasien dari iklan sampai chat WhatsApp: di mana mereka hilang, dan perbaikan mana yang didahulukan.</p>
+</div>
+</div>
+
+<div style="flex:1 1 300px;min-width:0;border:2px solid #DCE8FD;border-radius:28px;padding:40px 34px;box-sizing:border-box;display:flex;flex-direction:column;gap:24px">
+<div style="width:80px;height:80px;border-radius:24px;background:#EAF1FF;color:var(--brand);display:flex;align-items:center;justify-content:center"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="2.5"></circle><circle cx="18" cy="12" r="2.5"></circle><circle cx="6" cy="18" r="2.5"></circle><path d="M8.2 7.2l7.6 3.6M8.2 16.8l7.6-3.6"></path></svg></div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div class="m" style="font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#4A5568">Nilai Rp15 juta</div>
+<h3 class="d" style="font-weight:800;font-size:24px;line-height:1.25">Free Tracking Setup, Meta Chat Agent</h3>
+<p style="color:#4A5568">Sistem milik ELDEN yang menghubungkan tiap chat ke kampanye, ad set, dan kreatif iklan pemicunya. Anda melihat hasil per iklan, bukan sekadar klik.</p>
+</div>
+</div>
+
+<div style="flex:1 1 300px;min-width:0;border:2px solid #0E7C5A;background:#F2FBF7;border-radius:28px;padding:40px 34px;box-sizing:border-box;display:flex;flex-direction:column;gap:24px">
+<div style="width:80px;height:80px;border-radius:24px;background:#D9F5EA;color:#0B6B4D;display:flex;align-items:center;justify-content:center"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"></path><path d="M14 3v5h5M9 13h7M9 17h5"></path></svg></div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div class="m" style="font-weight:600;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#0B6B4D">Bonus</div>
+<h3 class="d" style="font-weight:800;font-size:24px;line-height:1.25">Laporan Sumber Lead</h3>
+<p style="color:#4A5568">Sumber lead terbaik, titik kebocoran, dan langkah paling berdampak berikutnya. Laporan ini milik Anda, apa pun keputusan Anda.</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- 6. Harga -->
+<div style="position:relative;overflow:hidden;background:var(--brand);color:#FFFFFF">
+<svg viewBox="0 0 600 520" width="520" height="451" fill="none" stroke="#1F6BFF" stroke-width="52" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;right:-140px;top:-120px;z-index:0" aria-hidden="true"><path d="M60 460 C 40 330 120 250 140 340 C 160 430 250 470 300 380 C 350 290 330 190 420 170 C 510 150 560 240 500 330 C 450 400 380 430 420 490"></path></svg>
+<div style="position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:clamp(72px,10vw,136px) clamp(20px,5vw,48px);box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;gap:56px">
+<div style="flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:16px">
+<div class="m" style="font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#C9D8F5">Harga expo</div>
+<div style="font-size:20px;color:#E3EDFF">Harga normal <span class="d" style="text-decoration:line-through;font-weight:800;color:#FFFFFF">Rp25 juta</span></div>
+<div class="d" style="font-weight:900;font-size:clamp(34px,5.4vw,60px);line-height:1.08;letter-spacing:-.03em;text-wrap:balance">Untuk 8 klinik pertama: Rp0</div>
+</div>
+<div style="flex:1 1 360px;min-width:0;display:flex;flex-direction:column;gap:32px;align-items:flex-start">
+<div style="display:flex;flex-wrap:wrap;gap:12px">
+<span style="background:#FFFFFF;color:var(--brand);font-weight:700;font-size:14px;line-height:1;padding:12px 18px;border-radius:999px">Rp10jt Audit funnel</span>
+<span style="background:#FFFFFF;color:var(--brand);font-weight:700;font-size:14px;line-height:1;padding:12px 18px;border-radius:999px">Rp15jt Setup tracking</span>
+<span style="background:#FFFFFF;color:var(--brand);font-weight:700;font-size:14px;line-height:1;padding:12px 18px;border-radius:999px">Bonus: Laporan Sumber Lead</span>
+</div>
+<a class="cta" href="https://wa.me/6285156390686?text=Halo%20ELDEN%2C%20saya%20pemilik%20klinik%20%5Bnama%20klinik%5D.%20Saya%20mau%20klaim%201%20dari%208%20slot%20gratis%20%28audit%20%2B%20tracking%29." style="display:inline-flex;align-items:center;min-height:58px;padding:0 36px;background:#FFFFFF;color:var(--brand);font-weight:800;font-size:17px;text-decoration:none;border-radius:999px">Klaim Slot Gratis Saya →</a>
+</div>
+</div>
+</div>
+
+<!-- 7. Cara kerja -->
+<div style="background:#EAF1FF">
+<div style="max-width:1120px;margin:0 auto;padding:clamp(72px,10vw,136px) clamp(20px,5vw,48px);box-sizing:border-box;display:flex;flex-direction:column;gap:72px">
+<div style="display:flex;flex-direction:column;gap:20px;max-width:760px">
+<div class="m" style="font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Cara kerja</div>
+<h2 class="d" style="font-weight:800;font-size:clamp(28px,4vw,46px);line-height:1.15;letter-spacing:-.02em;text-wrap:balance">3 langkah&nbsp;</h2>
+</div>
+<div class="steps" style="display:flex;flex-wrap:wrap;gap:56px 32px">
+
+<div style="position:relative;z-index:1;flex:1 1 280px;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:24px">
+<div style="width:88px;height:88px;border-radius:50%;background:var(--brand);color:#FFFFFF;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 10px #EAF1FF"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"></path><path d="M8 9h8M8 12.5h5"></path></svg></div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div class="m" style="font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--brand)">Langkah 1</div>
+<h3 class="d" style="font-weight:800;font-size:23px;line-height:1.25">Chat kami di WhatsApp.</h3>
+<p style="color:#4A5568">Satu klik. Kami konfirmasi slot Anda.</p>
+</div>
+</div>
+
+<div style="position:relative;z-index:1;flex:1 1 280px;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:24px">
+<div style="width:88px;height:88px;border-radius:50%;background:var(--brand);color:#FFFFFF;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 10px #EAF1FF"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="2.5"></circle><circle cx="18" cy="12" r="2.5"></circle><circle cx="6" cy="18" r="2.5"></circle><path d="M8.2 7.2l7.6 3.6M8.2 16.8l7.6-3.6"></path></svg></div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div class="m" style="font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--brand)">Langkah 2</div>
+<h3 class="d" style="font-weight:800;font-size:23px;line-height:1.25">Kami audit dan pasang tracking.</h3>
+<p style="color:#4A5568">Anda cukup menyediakan akses yang diperlukan. Kami tidak meminta rekam medis pasien.</p>
+</div>
+</div>
+
+<div style="position:relative;z-index:1;flex:1 1 280px;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:24px">
+<div style="width:88px;height:88px;border-radius:50%;background:var(--brand);color:#FFFFFF;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 10px #EAF1FF"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V11M10 20V4M16 20v-6M22 20H2"></path></svg></div>
+<div style="display:flex;flex-direction:column;gap:10px">
+<div class="m" style="font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--brand)">Langkah 3</div>
+<h3 class="d" style="font-weight:800;font-size:23px;line-height:1.25">Anda lihat sumber pasien yang sebenarnya.</h3>
+<p style="color:#4A5568">Kami presentasikan temuannya. Anda yang memutuskan langkah berikutnya.</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- 8. Bukti -->
+<div style="background:var(--deep);color:#FFFFFF">
+<div style="max-width:1120px;margin:0 auto;padding:clamp(72px,10vw,136px) clamp(20px,5vw,48px);box-sizing:border-box;display:flex;flex-direction:column;gap:64px">
+<div style="display:flex;flex-direction:column;gap:20px;max-width:760px">
+<div class="m" style="font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#9DBBFF">Bukti</div>
+<h2 class="d" style="font-weight:800;font-size:clamp(28px,4vw,46px);line-height:1.15;letter-spacing:-.02em;text-wrap:balance">Kami kerja dengan angka. <br>Bukan perasaan.</h2>
+<p style="font-size:18px;color:#C9D8F5">Hasil dari brand kesehatan yang sudah kami tangani:</p>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:24px">
+
+<div style="flex:1 1 460px;min-width:0;background:#0A3394;border-radius:28px;padding:40px 36px;box-sizing:border-box;display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;flex-direction:column;gap:6px">
+<div class="d" style="font-weight:900;font-size:clamp(48px,6vw,68px);line-height:1;letter-spacing:-.03em">-16%</div>
+<div style="font-weight:700;font-size:18px">biaya per lead</div>
+<div style="color: #C9D8F5; font-size: 15px; font-weight: 700">Klinik terapi laser</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;align-items:center;gap:12px"><span style="flex:0 0 68px;font-size:12px;color:#C9D8F5">Sebelum</span><div style="flex:1 1 auto;min-width:0;height:12px;background:rgba(255,255,255,.14);border-radius:999px;overflow:hidden"><div style="width:100%;height:12px;background:#7FA2F0"></div></div></div>
+<div style="display:flex;align-items:center;gap:12px"><span style="flex:0 0 68px;font-size:12px;color:#FFFFFF;font-weight:700">Sesudah</span><div style="flex:1 1 auto;min-width:0;height:12px;background:rgba(255,255,255,.14);border-radius:999px;overflow:hidden"><div style="width:84%;height:12px;background:#FFFFFF"></div></div></div>
+</div>
+</div>
+
+<div style="flex:1 1 460px;min-width:0;background:#0A3394;border-radius:28px;padding:40px 36px;box-sizing:border-box;display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;flex-direction:column;gap:6px">
+<div class="d" style="font-weight:900;font-size:clamp(48px,6vw,68px);line-height:1;letter-spacing:-.03em">+25%</div>
+<div style="font-weight:700;font-size:18px">lead</div>
+<div style="color: #C9D8F5; font-size: 15px; font-weight: 700">Brand alat kesehatan lutut</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;align-items:center;gap:12px"><span style="flex:0 0 68px;font-size:12px;color:#C9D8F5">Sebelum</span><div style="flex:1 1 auto;min-width:0;height:12px;background:rgba(255,255,255,.14);border-radius:999px;overflow:hidden"><div style="width:80%;height:12px;background:#7FA2F0"></div></div></div>
+<div style="display:flex;align-items:center;gap:12px"><span style="flex:0 0 68px;font-size:12px;color:#FFFFFF;font-weight:700">Sesudah</span><div style="flex:1 1 auto;min-width:0;height:12px;background:rgba(255,255,255,.14);border-radius:999px;overflow:hidden"><div style="width:100%;height:12px;background:#FFFFFF"></div></div></div>
+</div>
+</div>
+
+<div style="flex:1 1 460px;min-width:0;background:#0A3394;border-radius:28px;padding:40px 36px;box-sizing:border-box;display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;flex-direction:column;gap:6px">
+<div class="d" style="font-weight:900;font-size:clamp(48px,6vw,68px);line-height:1;letter-spacing:-.03em">2x</div>
+<div style="font-weight:700;font-size:18px">ROAS</div>
+<div style="color: #C9D8F5; font-size: 15px; font-weight: 700">Brand suplemen antioksidan, dari nol awareness</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;align-items:center;gap:12px"><span style="flex:0 0 68px;font-size:12px;color:#C9D8F5">Biaya iklan</span><div style="flex:1 1 auto;min-width:0;height:12px;background:rgba(255,255,255,.14);border-radius:999px;overflow:hidden"><div style="width:50%;height:12px;background:#7FA2F0"></div></div></div>
+<div style="display:flex;align-items:center;gap:12px"><span style="flex:0 0 68px;font-size:12px;color:#FFFFFF;font-weight:700">Omzet</span><div style="flex:1 1 auto;min-width:0;height:12px;background:rgba(255,255,255,.14);border-radius:999px;overflow:hidden"><div style="width:100%;height:12px;background:#FFFFFF"></div></div></div>
+</div>
+</div>
+
+<div style="flex:1 1 460px;min-width:0;background:#0A3394;border-radius:28px;padding:40px 36px;box-sizing:border-box;display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;flex-direction:column;gap:6px">
+<div class="d" style="font-weight:900;font-size:clamp(48px,6vw,68px);line-height:1;letter-spacing:-.03em">+20%</div>
+<div style="font-weight:700;font-size:18px">lead</div>
+<div style="color: #C9D8F5; font-size: 15px; font-weight: 700">Brand e-commerce kesehatan</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;align-items:center;gap:12px"><span style="flex:0 0 68px;font-size:12px;color:#C9D8F5">Sebelum</span><div style="flex:1 1 auto;min-width:0;height:12px;background:rgba(255,255,255,.14);border-radius:999px;overflow:hidden"><div style="width:83.3%;height:12px;background:#7FA2F0"></div></div></div>
+<div style="display:flex;align-items:center;gap:12px"><span style="flex:0 0 68px;font-size:12px;color:#FFFFFF;font-weight:700">Sesudah</span><div style="flex:1 1 auto;min-width:0;height:12px;background:rgba(255,255,255,.14);border-radius:999px;overflow:hidden"><div style="width:100%;height:12px;background:#FFFFFF"></div></div></div>
+</div>
+</div>
+
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;max-width:70ch">
+<p style="font-size:14px;color:#C9D8F5;line-height:1.7">Nama brand tidak kami cantumkan demi kerahasiaan klien. Sumber: data klien ELDEN.</p>
+<p style="font-size:13px;color:#9DBBFF;line-height:1.7">Batang adalah perbandingan relatif dari angka di atas, bukan skala absolut.</p>
+</div>
+</div>
+</div>
+
+<!-- 9. Cocok atau tidak -->
+<div style="background:#FFFFFF">
+<div style="max-width:1120px;margin:0 auto;padding:clamp(72px,10vw,136px) clamp(20px,5vw,48px);box-sizing:border-box;display:flex;flex-direction:column;gap:56px">
+<div style="display:flex;flex-direction:column;gap:20px;max-width:760px">
+<div class="m" style="font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Cocok atau tidak</div>
+<h2 class="d" style="font-weight:800;font-size:clamp(28px,4vw,46px);line-height:1.15;letter-spacing:-.02em;text-wrap:balance">Penawaran ini untuk Anda jika…</h2>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:28px">
+<div style="flex:1 1 400px;min-width:0;border:2.5px solid var(--brand);background:#F3F7FF;border-radius:28px;padding:40px 36px;box-sizing:border-box;display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;align-items:center;gap:14px">
+<div style="flex:0 0 48px;width:48px;height:48px;border-radius:50%;background:var(--brand);color:#FFFFFF;display:flex;align-items:center;justify-content:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"></path></svg></div>
+<div class="d" style="font-weight:800;font-size:22px">Cocok</div>
+</div>
+<p>Anda pemilik klinik, sudah atau akan beriklan di Meta, Instagram, atau Google, menerima pasien lewat WhatsApp, dan siap mematikan iklan yang tidak menghasilkan.</p>
+</div>
+<div style="flex:1 1 400px;min-width:0;border:2.5px solid #DCE8FD;border-radius:28px;padding:40px 36px;box-sizing:border-box;display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;align-items:center;gap:14px">
+<div style="flex:0 0 48px;width:48px;height:48px;border-radius:50%;background:#E8EAEE;color:#4A5568;display:flex;align-items:center;justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></div>
+<div class="d" style="font-weight:800;font-size:22px">Tidak cocok</div>
+</div>
+<p style="color:#2D3748">Anda belum beriklan sama sekali, atau lebih nyaman dengan laporan "yang penting ramai".</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 10. Kuota -->
+<div style="background:#F3F7FF">
+<div style="max-width:1120px;margin:0 auto;padding:clamp(72px,10vw,136px) clamp(20px,5vw,48px);box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;gap:64px">
+<div style="flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:24px">
+<div class="m" style="font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Kuota</div>
+<h2 class="d" style="font-weight:800;font-size:clamp(28px,4vw,46px);line-height:1.15;letter-spacing:-.02em;text-wrap:balance">Hanya 8 slot. Tutup 15 Oktober 2026, 23.59 WIB.</h2>
+<p style="font-size:18px;color:#4A5568;max-width:52ch">Klinik adalah vertical baru untuk sistem ini. Itu alasan 8 slot ini gratis: kami mendapat case study, Anda mendapat sistemnya.<br>Karena dikerjakan langsung oleh tim, kami batasi menjadi 8.</p>
+</div>
+<div style="flex:1 1 380px;min-width:0;background:#FFFFFF;border-radius:28px;padding:40px 36px;box-sizing:border-box;display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-wrap:wrap;gap:16px">
+<div class="d" style="flex:0 0 64px;width:64px;height:64px;border-radius:50%;background:var(--brand);color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px">1</div>
+<div class="d" style="flex:0 0 64px;width:64px;height:64px;border-radius:50%;background:var(--brand);color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px">2</div>
+<div class="d" style="flex:0 0 64px;width:64px;height:64px;border-radius:50%;background:var(--brand);color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px">3</div>
+<div class="d" style="flex:0 0 64px;width:64px;height:64px;border-radius:50%;background:var(--brand);color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px">4</div>
+<div class="d" style="flex:0 0 64px;width:64px;height:64px;border-radius:50%;background:var(--brand);color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px">5</div>
+<div class="d" style="flex:0 0 64px;width:64px;height:64px;border-radius:50%;background:var(--brand);color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px">6</div>
+<div class="d" style="flex:0 0 64px;width:64px;height:64px;border-radius:50%;background:var(--brand);color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px">7</div>
+<div class="d" style="flex:0 0 64px;width:64px;height:64px;border-radius:50%;background:var(--brand);color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px">8</div>
+</div>
+<div style="display:flex;align-items:center;gap:16px;border-top:1px solid #DCE8FD;padding-top:28px">
+<div style="flex:0 0 52px;width:52px;height:52px;border-radius:50%;background:#EAF1FF;color:var(--brand);display:flex;align-items:center;justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></div>
+<div style="display: flex; flex-direction: column; gap: 2px">
+<div class="d" style="font-weight: 800; font-size: 22px; line-height: 1.3"><span data-countdown>Segera ditutup</span></div>
+<div style="font-size:14px;color:#4A5568;line-height:1.5">Tutup 15 Okt 2026, 23.59 WIB</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 11. Jaminan -->
+<div style="background:#FFFFFF">
+<div style="max-width:1120px;margin:0 auto;padding:clamp(72px,10vw,136px) clamp(20px,5vw,48px);box-sizing:border-box;display:flex;flex-direction:column;gap:56px">
+<div style="display:flex;flex-direction:column;gap:20px;max-width:760px">
+<div class="m" style="font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">YANG KAMI TAWARKAN</div>
+<h2 class="d" style="font-weight:800;font-size:clamp(28px,4vw,46px);line-height:1.15;letter-spacing:-.02em;text-wrap:balance">Summary</h2>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:24px">
+
+<div style="flex:1 1 440px;min-width:0;background:#F3F7FF;border-radius:24px;padding:36px 34px;box-sizing:border-box;display:flex;gap:22px;align-items:flex-start">
+<div style="flex:0 0 56px;width:56px;height:56px;border-radius:50%;background:var(--brand);color:#FFFFFF;display:flex;align-items:center;justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"></path><path d="M8.5 12l2.5 2.5L16 9.5"></path></svg></div>
+<p style="min-width:0;padding-top:2px">Audit dan tracking gratis: tanpa kontrak, tanpa kartu kredit, tanpa langganan otomatis.</p>
+</div>
+
+<div style="flex:1 1 440px;min-width:0;background:#F3F7FF;border-radius:24px;padding:36px 34px;box-sizing:border-box;display:flex;gap:22px;align-items:flex-start">
+<div style="flex:0 0 56px;width:56px;height:56px;border-radius:50%;background:var(--brand);color:#FFFFFF;display:flex;align-items:center;justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></div>
+<p style="min-width:0;padding-top:2px">Layanan lanjutan hanya jika Anda yang memintanya, dan syaratnya kami jelaskan sebelum Anda setuju.</p>
+</div>
+
+<div style="flex:1 1 440px;min-width:0;background:#F3F7FF;border-radius:24px;padding:36px 34px;box-sizing:border-box;display:flex;gap:22px;align-items:flex-start">
+<div style="flex:0 0 56px;width:56px;height:56px;border-radius:50%;background:var(--brand);color:#FFFFFF;display:flex;align-items:center;justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg></div>
+<p style="min-width:0;padding-top:2px">Akses ke WhatsApp dan dashboard bisa Anda cabut kapan saja.</p>
+</div>
+
+<div style="flex:1 1 440px;min-width:0;background:#F3F7FF;border-radius:24px;padding:36px 34px;box-sizing:border-box;display:flex;gap:22px;align-items:flex-start">
+<div style="flex:0 0 56px;width:56px;height:56px;border-radius:50%;background:var(--brand);color:#FFFFFF;display:flex;align-items:center;justify-content:center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"></path><path d="M14 3v5h5M9 13h7M9 17h5"></path></svg></div>
+<p style="min-width:0;padding-top:2px">Hasil audit tetap milik Anda.</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- 12. FAQ -->
+<div style="background:#F3F7FF">
+<div style="max-width:880px;margin:0 auto;padding:clamp(72px,10vw,136px) clamp(20px,5vw,48px);box-sizing:border-box;display:flex;flex-direction:column;gap:56px">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div class="m" style="font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">Pertanyaan umum</div>
+<h2 class="d" style="font-weight:800;font-size:clamp(28px,4vw,46px);line-height:1.15;letter-spacing:-.02em;text-wrap:balance">Yang biasanya ditanyakan pemilik klinik</h2>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:16px">
+<details style="background:#FFFFFF;border-radius:20px;padding:28px 32px">
+<summary class="d" style="display:flex;justify-content:space-between;align-items:center;gap:16px;font-weight:700;font-size:19px;line-height:1.4">Apa itu Meta Chat Agent?<svg class="plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0155FF" stroke-width="2.5" stroke-linecap="round" style="flex:0 0 24px" aria-hidden="true"><path d="M12 4v16M4 12h16"></path></svg></summary>
+<p style="margin-top:16px;color:#4A5568;max-width:60ch">Sistem tracking Click-to-WhatsApp buatan kami. Ia menghubungkan chat ke iklan Meta yang memicunya, jadi iklan dinilai dari chat dan hasilnya, bukan klik.</p>
+</details>
+<details style="background:#FFFFFF;border-radius:20px;padding:28px 32px">
+<summary class="d" style="display:flex;justify-content:space-between;align-items:center;gap:16px;font-weight:700;font-size:19px;line-height:1.4">Apakah isi chat pasien dibaca?<svg class="plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0155FF" stroke-width="2.5" stroke-linecap="round" style="flex:0 0 24px" aria-hidden="true"><path d="M12 4v16M4 12h16"></path></svg></summary>
+<p style="margin-top:16px;color:#4A5568;max-width:60ch">Sistem dapat membaca isi chat, dan itu dipakai untuk menandai sumber iklan dan status tiap chat (misalnya sudah booking atau belum). Data hanya dipakai untuk laporan klinik Anda, tidak dijual dan tidak dibagikan ke pihak lain. Kami tidak meminta rekam medis.</p>
+</details>
+<details style="background:#FFFFFF;border-radius:20px;padding:28px 32px">
+<summary class="d" style="display:flex;justify-content:space-between;align-items:center;gap:16px;font-weight:700;font-size:19px;line-height:1.4">Benar-benar gratis? Apa jebakannya?<svg class="plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0155FF" stroke-width="2.5" stroke-linecap="round" style="flex:0 0 24px" aria-hidden="true"><path d="M12 4v16M4 12h16"></path></svg></summary>
+<p style="margin-top:16px;color:#4A5568;max-width:60ch">Audit dan tracking gratis untuk 8 klinik pertama. Sebagai gantinya, hasilnya boleh kami jadikan case study. Nama klinik bisa disamarkan, dan Anda menyetujui isinya sebelum dipublikasikan.</p>
+<p style="margin-top:16px;color:#4A5568;max-width:60ch">Setelah itu, jika Anda mau kami yang menjalankan semuanya: <strong style="color:#0A0A0A">Rp12,5 juta per bulan, komitmen 6 bulan.</strong> Sudah termasuk pengelolaan iklan, tracking, strategi, dan laporan. Budget iklan dibayar terpisah langsung ke Meta. Tidak wajib. Kalau tidak mau lanjut, berhenti di sini tanpa biaya.</p>
+</details>
+<details style="background:#FFFFFF;border-radius:20px;padding:28px 32px">
+<summary class="d" style="display:flex;justify-content:space-between;align-items:center;gap:16px;font-weight:700;font-size:19px;line-height:1.4">Perlu ganti agensi atau sistem?<svg class="plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0155FF" stroke-width="2.5" stroke-linecap="round" style="flex:0 0 24px" aria-hidden="true"><path d="M12 4v16M4 12h16"></path></svg></summary>
+<p style="margin-top:16px;color:#4A5568;max-width:60ch">Tidak. Tracking bekerja di atas iklan dan WhatsApp yang sudah Anda pakai.</p>
+</details>
+<details style="background:#FFFFFF;border-radius:20px;padding:28px 32px">
+<summary class="d" style="display:flex;justify-content:space-between;align-items:center;gap:16px;font-weight:700;font-size:19px;line-height:1.4">Siapa yang membalas di WhatsApp?<svg class="plus" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0155FF" stroke-width="2.5" stroke-linecap="round" style="flex:0 0 24px" aria-hidden="true"><path d="M12 4v16M4 12h16"></path></svg></summary>
+<p style="margin-top:16px;color:#4A5568;max-width:60ch">Tim ELDEN langsung.</p>
+</details>
+</div>
+</div>
+</div>
+
+<!-- 13. CTA akhir -->
+<div style="position:relative;overflow:hidden;background:var(--brand);color:#FFFFFF">
+<svg viewBox="0 0 400 300" width="440" height="330" fill="none" stroke="#1F6BFF" stroke-width="46" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;right:-100px;top:-70px;z-index:0" aria-hidden="true"><path d="M20 250 C 60 120 140 40 190 110 C 240 180 160 230 120 180 C 90 140 140 90 220 100 C 300 110 330 40 380 30"></path></svg>
+<svg viewBox="0 0 400 300" width="320" height="240" fill="none" stroke="#1F6BFF" stroke-width="46" stroke-linecap="round" stroke-linejoin="round" style="position:absolute;left:-130px;bottom:-100px;z-index:0" aria-hidden="true"><path d="M20 250 C 60 120 140 40 190 110 C 240 180 160 230 120 180 C 90 140 140 90 220 100 C 300 110 330 40 380 30"></path></svg>
+<div style="position:relative;z-index:1;max-width:1120px;margin:0 auto;padding:clamp(80px,11vw,152px) clamp(20px,5vw,48px);box-sizing:border-box;display:flex;flex-direction:column;align-items:flex-start;gap:32px">
+<h2 class="d" style="font-weight:900;font-size:clamp(30px,4.8vw,56px);line-height:1.1;letter-spacing:-.03em;text-wrap:balance;max-width:16em">Setiap bulan tanpa tracking, ada iklan yang Anda bayar tapi tidak pernah jadi pasien.</h2>
+<p class="m" style="font-weight:600;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#E3EDFF">8 SLOT. TUTUP 15 OKTOBER, 23.59 WIB.</p>
+<a class="cta" href="https://wa.me/6285156390686?text=Halo%20ELDEN%2C%20saya%20pemilik%20klinik%20%5Bnama%20klinik%5D.%20Saya%20mau%20klaim%201%20dari%208%20slot%20gratis%20%28audit%20%2B%20tracking%29." style="display:inline-flex;align-items:center;min-height:58px;padding:0 36px;background:#FFFFFF;color:var(--brand);font-weight:800;font-size:17px;text-decoration:none;border-radius:999px">Klaim Slot Gratis Saya →</a>
+</div>
+</div>
+
+<!-- Footer -->
+<div style="background:#0A0A0A;color:#B8C2D6">
+<div style="max-width:1120px;margin:0 auto;padding:40px clamp(20px,5vw,48px);box-sizing:border-box;display:flex;flex-direction:column;gap:8px;font-size:14px;line-height:1.7">
+<div>© ELDEN · PT Klien Mahadaya Sukses · Jakarta</div>
+<div>Layanan ini membahas pemasaran dan pelacakan lead; bukan layanan atau klaim medis.</div>
+</div>
+</div>
+
+<!-- Tombol tetap -->
+<div style="position:sticky;bottom:0;z-index:20;background:#FFFFFF;border-top:1px solid #DCE8FD;padding:10px clamp(20px,5vw,48px);box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 20px">
+<a class="cta" href="https://wa.me/6285156390686?text=Halo%20ELDEN%2C%20saya%20pemilik%20klinik%20%5Bnama%20klinik%5D.%20Saya%20mau%20klaim%201%20dari%208%20slot%20gratis%20%28audit%20%2B%20tracking%29." style="display:inline-flex;align-items:center;min-height:46px;padding:0 26px;background:var(--brand);color:#FFFFFF;font-weight:800;font-size:15px;text-decoration:none;border-radius:999px">Klaim Slot Gratis Saya →</a>
+<span class="m" style="font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#4A5568">Gratis · tanpa kontrak</span>
+</div>
+
+</div>
+
+<script>
+(function () {
+  // Ubah tanggal tutup di sini (format: tahun-bulan-tanggal, jam, zona waktu WIB).
+  var DEADLINE = new Date('2026-10-15T23:59:00+07:00').getTime();
+
+  function label() {
+    var diff = DEADLINE - Date.now();
+    if (diff <= 0) return 'Penawaran ditutup';
+    if (diff >= 86400000) return 'Sisa ' + Math.floor(diff / 86400000) + ' hari';
+    return 'Sisa ' + Math.max(1, Math.floor(diff / 3600000)) + ' jam';
+  }
+  function render() {
+    var text = label();
+    var els = document.querySelectorAll('[data-countdown]');
+    for (var i = 0; i < els.length; i++) els[i].textContent = text;
+  }
+  render();
+  setInterval(render, 60000);
+})();
+</script>
+</body>
+</html>
